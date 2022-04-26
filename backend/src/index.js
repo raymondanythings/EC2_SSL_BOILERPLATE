@@ -33,11 +33,11 @@ let data = [
     userName: "erer",
   },
 ];
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   res.json(data);
 });
 
-app.post("/", (req, res) => {
+app.post("/api", (req, res) => {
   const { title, description, userName } = req.body;
 
   data.push({ id: data.length + 1, title, description, userName });

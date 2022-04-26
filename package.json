@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build" : "cd client && npm run build && mv dist/ ../",
-    "prestart": "rm -rf  dist/ && cd client && npm run build && mv dist/ ../",
+    "prebuild": "rm -rf  dist/",
     "start" : "cd backend && yarn start"
   },
   "repository": {
